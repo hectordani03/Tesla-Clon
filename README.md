@@ -11,9 +11,7 @@ This project is a clone of the Tesla main page using Tailwind CSS.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Language for describing the style of an HTML document.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Programming language for client-side development.
 
-## Demo
-
-[View live demo](link-to-your-demo)
+## Demo)
 
 ## Installation
 
