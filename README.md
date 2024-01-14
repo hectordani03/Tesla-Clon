@@ -1,43 +1,42 @@
-# Proyecto de Clon Tesla con Tailwind CSS
+# Tesla Clone Project with Tailwind CSS
 
-Este proyecto es un clon de la página principal de Tesla utilizando Tailwind CSS.
+This project is a clone of the Tesla main page using Tailwind CSS.
 
-![Tesla Clon](../Tesla-Clon/assets/Tesla-Icon.png)
+![Tesla Clone](../Tesla-Clon/assets/portada.png)
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- [Tailwind CSS](https://tailwindcss.com/): Un marco de trabajo de utilidades de primer nivel para construir interfaces de usuario.
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): Lenguaje de marcado estándar para documentos diseñados para ser mostrados en un navegador web.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Lenguaje para describir el estilo de un documento HTML.
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Lenguaje de programación para el desarrollo del lado del cliente.
+- [Tailwind CSS](https://tailwindcss.com/): A top-notch utility-first framework for building user interfaces.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): Standard markup language for documents designed to be displayed in a web browser.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Language for describing the style of an HTML document.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): Programming language for client-side development.
 
 ## Demo
 
-[Ver demo en vivo](enlace-a-tu-demo)
+[View live demo](link-to-your-demo)
 
-## Instalación
+## Installation
 
-1. Clona el repositorio: `git clone https://github.com/hectordani03/Tesla-Clon.git`
-2. Accede al directorio del proyecto: `cd Tesla-Clon`
-3. Abre el archivo `index.html` en tu navegador.
+1. Clone the repository: `git clone https://github.com/hectordani03/Tesla-Clone.git`
+2. Navigate to the project directory: `cd Tesla-Clone`
+3. Open the `index.html` file in your browser.
 
-## Uso
+## Usage
 
-Personaliza el proyecto según tus necesidades. Puedes modificar los estilos utilizando las clases de Tailwind CSS, agregar nuevas secciones o incluso integrar funcionalidades adicionales.
+Customize the project according to your needs. You can modify styles using Tailwind CSS classes, add new sections, or even integrate additional functionalities.
 
-## Contribuir
+## Contribute
 
-Si deseas contribuir al proyecto, sigue estos pasos:
+If you want to contribute to the project, follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tus cambios: `git checkout -b nombre-de-tu-rama`
-3. Realiza tus cambios y haz commits: `git commit -m 'Descripción de tus cambios'`
-4. Haz push a tu rama: `git push origin nombre-de-tu-rama`
-5. Abre un pull request en GitHub.
+1. Fork the repository.
+2. Create a new branch for your changes: `git checkout -b your-branch-name`
+3. Make your changes and commit them: `git commit -m 'Description of your changes'`
+4. Push to your branch: `git push origin your-branch-name`
+5. Open a pull request on GitHub.
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
+This project is under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details.
 
 ---
-
