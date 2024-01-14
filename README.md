@@ -2,7 +2,7 @@
 
 This project is a clone of the Tesla main page using Tailwind CSS.
 
-![Tesla Clone](../Tesla-Clon/assets/portada.png)
+![Tesla Clone](assets/portada.png)
 
 ## Technologies Used
 
