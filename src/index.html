@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="font-GothamSSmA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="shortcut icon" href="../assets/Tesla-Icon.png" type="image/x-icon">
+    <title>Electric Cars, Solar & Clean Energy | Tesla </title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            height: 100vh;
+            scroll-snap-align: start; /* Cambiado a 'start' para asegurar un mejor ajuste */
+        }
+
+        .page-title h1{
+            animation: moveH1 .5s linear 1s forwards;
+            opacity: 0;
+        }
+
+        .page-title p{
+            animation: moveP .5s linear 1.5s forwards;
+            opacity: 0;
+        }
+
+        .btn-1 {
+            animation: moveBtn1 .8s ease-in-out 1.5s forwards;
+            opacity: 0;
+        }
+
+        .btn-2 {
+            animation: moveBtn2 .8s ease-in-out 1.5s forwards;
+            opacity: 0;
+        }
+
+        .page-info .footer{
+            animation: main-footer .5s linear 2s forwards;
+            opacity: 0;
+        }
+
+        header{
+            opacity: 0;
+            animation: header .5s linear 2s forwards;
+        }
+
+        .shop-now-animation{
+            animation: moveBtn3 1s linear 1.5s forwards;
+        }
+
+        @keyframes moveBtn3 {
+            from{
+                transform: translateY(0px);
+            }to{
+                transform: translateY(-30px);
+            }
+        }
+
+        @keyframes header {
+            to{
+                opacity: 1;
+            }
+        }
+
+        @keyframes main-footer {
+            from{
+                opacity: 0;
+                transform: translateY(-30px);
+            }to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes moveH1 {
+            from{
+                transform: translateY(50px);
+            }to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes moveP {
+            from{
+                transform: translateY(60px);
+            }to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes moveBtn1 {
+            from{
+                position: relative;
+                right: 50px;
+            }to{
+                opacity: 1;
+                right: 0px;
+            }
+        }
+
+        @keyframes moveBtn2 {
+            from{
+                opacity: 0;
+                position: relative;
+                left: 50px;
+            }to{
+                opacity: 1;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex justify-between bg-transparent fixed top-0 w-full z-50">
+        <a class="w-28 h-20 ml-10" href="">
+            <svg class="logo-tesla w-28 h-15 mt-6" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
+        </a>
+        <div class="links flex mt-3 font-medium">
+            <a class="tracking-wide text-sm hover:bg-slate-200 px-5 py-2 rounded-md h-10 transition ease-in delay-100" href="">Vehicles</a>
+            <a class="tracking-wide text-sm hover:bg-slate-200 px-5 py-2 rounded-md h-10 transition ease-in delay-100" href="">Energy</a>
+            <a class="tracking-wide text-sm hover:bg-slate-200 px-5 py-2 rounded-md h-10 transition ease-in delay-100" href="">Charging</a>
+            <a class="tracking-wide text-sm hover:bg-slate-200 px-5 py-2 rounded-md h-10 transition ease-in delay-100" href="">Discover</a>
+            <a class="tracking-wide text-sm hover:bg-slate-200 px-5 py-2 rounded-md h-10 transition ease-in delay-100" href="">Shop</a>
+        </div>
+        <div class="icons-header flex gap-x-3 mt-4">
+            <a href="">     
+                <svg class="w-6 h-6" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 20.5a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17Zm0 1.5c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm0-6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm.053-3.533a7.8 7.8 0 0 1 .92-.767 6.97 6.97 0 0 0 .746-.61 2.31 2.31 0 0 0 .468-.635c.126-.253.188-.548.188-.883 0-.374-.082-.723-.246-1.048-.158-.324-.415-.588-.771-.792-.356-.203-.81-.305-1.362-.305-.575 0-1.045.116-1.411.347a1.991 1.991 0 0 0-.788.89c-.06.134-.11.272-.148.413-.111.414-.445.767-.874.767-.428 0-.784-.35-.71-.772.07-.407.2-.79.386-1.15.301-.583.758-1.048 1.37-1.394C10.435 6.176 11.185 6 12.07 6c.93 0 1.687.181 2.273.544.59.358 1.014.803 1.271 1.337.257.533.386 1.07.386 1.608 0 .545-.085 1.012-.254 1.403-.17.385-.375.698-.616.94-.235.242-.55.514-.943.817-.312.247-.561.46-.747.635-.18.176-.33.385-.451.627-.05.099-.087.2-.113.302-.108.424-.422.787-.86.787-.437 0-.806-.356-.76-.79a2.948 2.948 0 0 1 .797-1.743Z"></path></svg>
+            </a>
+            <a href="">  
+                <svg class="w-6 h6" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z"></path></svg>
+            </a>
+            <a href="">
+                <svg class="w-6 h-6 mr-12" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM6.858 18.752c.605-1.868 2.722-3.24 5.142-3.24 2.42 0 4.537 1.372 5.142 3.24C15.712 19.844 13.933 20.5 12 20.5s-3.712-.656-5.142-1.748zm11.469-1.095c-1.02-2.165-3.483-3.645-6.327-3.645s-5.307 1.48-6.327 3.645A8.456 8.456 0 0 1 3.5 12c0-4.687 3.813-8.5 8.5-8.5 4.687 0 8.5 3.813 8.5 8.5a8.456 8.456 0 0 1-2.173 5.657zM12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 5.5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg>
+            </a>
+        </div>
+    </header>
+    <main class="h-screen" style="background-image: url(../assets/main-img.webp); background-size: cover; background-repeat: no-repeat;">
+        <section class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full opacity-100">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Model 3</h1>
+                <p class="text-xl font-normal tracking-wide">Lease starting at $329/mo*</p>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="btn-1 bg-slate-200 p-3 px-20 rounded mr-4 sm:mb-10" href="">Custom order</a>
+                    <a class="btn-2 bg-zinc-700 p-3 px-20 rounded text-white font-medium" href="">Learn More</a>
+                </div>
+                <p class="text-xs footer">*Excludes taxes and fees with price subject to change. Available in select states. <a class=" underline underline-offset-2" href="">See Details </a></p>
+            </div>
+        </section>
+    </main>
+    <section class="section-2 h-screen relative">
+        <div class="absolute top-0 bottom-0">
+            <video autoplay muted loop src="../assets/vid-1.mp4" class="h-screen w-screen object-cover"></video>
+        </div>
+        <div class="section section-2 flex flex-col justify-between w-1/2 mx-auto text-center h-full relative">
+            <div class="page-title mt-28 tracking-wide text-white">
+                <h1 class="text-4xl font-medium">Model Y</h1>
+                <p class="text-xl font-normal tracking-wide">Lease starting at $329/mo*</p>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4" href="">Custom order</a>
+                    <a class="bg-zinc-800 p-3 px-20 rounded text-white font-medium opacity-65" href="">Demo Drive</a>
+                </div>
+                <p class="text-xs text-white">*Excludes taxes and fees with price subject to change. Available in select states. <a class=" underline underline-offset-2" href="">See Details </a></p>
+            </div>
+        </div>
+    </section>
+    <section class="section-3 h-screen" style="background-image: url(../assets/section-3.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Model X</h1>
+                <p class="text-xl font-medium tracking-wide">From $68,590*</p>
+                <p class="text-xs">After Federal Tax Credit & Est. Gas Savings</p>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4" href="">Custom order</a>
+                    <a class="bg-neutral-800 p-3 px-20 rounded text-white font-medium" href="">Demo Drive</a>
+                </div>
+                <p class="text-xs text-white">*Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change. </p>
+                <a class="underline underline-offset-2 text-xs text-white" href="">Learn about est. gas savings.</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-4 h-screen" style="background-image: url(../assets/section-4.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Model S</h1>
+                <p class="text-xl font-medium tracking-wide">From $71,090*</p>
+                <p class="text-xs">After Est. Gas Savings</p>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4" href="">Custom order</a>
+                    <a class="bg-zinc-700 p-3 px-20 rounded text-white font-medium" href="">Demo Drive</a>
+                </div>
+                <p class="text-xs">*Price before savings is $74,990, excluding taxes and fees. Subject to change.</p>
+                <a class="text-xs underline underline-offset-2" href="">Learn about est. gas savings.</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-5 h-screen" style="background-image: url(../assets/section-5.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-end w-1/2 mx-auto text-center h-full">
+            <div class="page-info mb-10">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4 opacity-80" href="">Order Now</a>
+                    <a class="bg-zinc-900 p-3 px-20 rounded text-white font-medium" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6 h-screen relative">
+        <div class="absolute top-0 bottom-0">
+            <video autoplay muted loop src="../assets/video-2.webm" class="h-screen w-screen object-cover"></video>
+        </div>
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full relative">
+            <div class="page-title mt-28 tracking-wide text-white">
+                <h1 class="text-4xl font-medium">Experience Tesla</h1>
+                <p class="text-sm font-normal tracking-wide">Schedule a Demo Drive Today</p>
+            </div>
+            <div class="page-info mb-10">
+                <div class="buttons-info mb-12 text-sm">
+                    <a class="bg-transparent p-2 px-20 rounded mr-4 border-4 border-white text-white" href="">Demo Drive</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-7 h-screen" style="background-image: url(../assets/section-7.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Solar Panels</h1>
+                <a class="text-sm font-normal tracking-wide underline underline-offset-2">Schedule a Virtual Consultation</a>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4 opacity-85" href="">Custom order</a>
+                    <a class="bg-zinc-800 p-3 px-20 rounded text-white font-medium opacity-65" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-8 h-screen" style="background-image: url(../assets/section-8.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Solar Roof</h1>
+                <p class="text-sm font-normal tracking-wide">Produce clean Energy From Your Roof</p>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="bg-slate-100 p-3 px-20 rounded mr-4" href="">Order Now</a>
+                    <a class="bg-zinc-800 p-3 px-20 rounded text-white font-medium opacity-65" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-9 h-screen" style="background-image: url(../assets/section-9.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">PowerWall</h1>
+            </div>
+            <div class="page-info mb-5">
+                <div class="buttons-info mb-16 text-sm">
+                    <a class="bg-slate-200 p-3 px-20 rounded mr-4" href="">Order Now</a>
+                    <a class="bg-zinc-800 p-3 px-20 rounded text-white font-medium opacity-75" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-10 h-screen" style="background-image: url(../assets/section-10.webp); background-size: cover; background-repeat: no-repeat;">
+        <div class="section section-1 flex flex-col justify-between w-1/2 mx-auto text-center h-full">
+            <div class="page-title mt-28 tracking-wide">
+                <h1 class="text-4xl font-medium">Accessories</h1>
+            </div>
+            <div class="page-info mb-5 flex flex-col items-center justify-center">
+                <div class="buttons-info mb-10 text-sm">
+                    <a class="btn-3 bg-slate-200 p-3 px-20 rounded mr-4" href="#">Shop Now</a>
+                </div>
+                <footer>
+                    <ul class="flex items-center justify-center gap-x-5 text-xs text-white text-medium">
+                        <li><a href="#">Tesla © 2024</a></li>
+                        <li><a href="#">Privacy & Legal</a></li>
+                        <li><a href="#">Vehicle Recalls</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Get Updates</a></li>
+                        <li><a href="#">Locations</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </section>
+        <script src="../src/index.js"></script>
+    </body>
+</html>
